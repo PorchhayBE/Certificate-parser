@@ -1,0 +1,20 @@
+{
+  "name": "pkcs7-x509-asn1-parser",
+  "version": "1.0.0",
+  "description": "Clean, modular client-side PKCS#7 / CMS ASN.1 Parser and X.509 Certificate Viewer",
+  "main": "index.html",
+  "scripts": {
+    "test": "node test/test-parser.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "pkcs7",
+    "cms",
+    "x509",
+    "asn1",
+    "certificate",
+    "parser"
+  ],
+  "author": "Google DeepMind / Antigravity",
+  "license": "MIT"
+}
