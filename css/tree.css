@@ -1,0 +1,103 @@
+.tree {
+  padding-left: 2px;
+}
+
+.trow {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 2px 8px;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.trow:hover {
+  background: var(--hover);
+}
+
+.trow.sel {
+  background: var(--selbg);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.twisty {
+  width: 13px;
+  flex: none;
+  color: var(--dim);
+  user-select: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.twisty.empty {
+  visibility: hidden;
+}
+
+.tagcls {
+  flex: none;
+  font-size: 10px;
+  padding: 0 5px;
+  border-radius: 4px;
+  margin-top: -1px;
+  background: var(--chip);
+  color: var(--dim);
+  border: 1px solid var(--line);
+}
+
+.tagcls.APP {
+  color: var(--appc);
+  border-color: var(--appl);
+}
+
+.tagcls.CTX {
+  color: var(--ctxc);
+  border-color: var(--ctxl);
+}
+
+.tagcls.PRV {
+  color: var(--prvc);
+  border-color: var(--prvl);
+}
+
+.tagname {
+  flex: none;
+  font-weight: 600;
+}
+
+.role {
+  flex: none;
+  color: var(--green);
+  font-size: 11px;
+  background: var(--rolebg);
+  border: 1px solid var(--roleline);
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+.meta {
+  flex: none;
+  color: var(--dim);
+  font-size: 11px;
+}
+
+.val {
+  color: var(--amber);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kids {
+  margin-left: 17px;
+  border-left: 1px dotted var(--kidline);
+}
+
+@media (max-width: 700px) {
+  .twisty {
+    padding: 5px 7px;
+    margin: -5px -3px;
+  }
+  .trow {
+    padding: 4px 8px;
+  }
+}

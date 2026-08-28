@@ -1,0 +1,40 @@
+#hexScroll {
+  flex: 1;
+  overflow: auto;
+  padding: 8px 10px;
+}
+
+.hexrow {
+  white-space: pre;
+  line-height: 1.5;
+}
+
+.hexoff {
+  color: var(--hexoff);
+}
+
+.hx {
+  color: var(--hxc);
+}
+
+.hx.on {
+  background: var(--hlbg);
+  color: var(--hlfg);
+  border-radius: 2px;
+}
+
+.as {
+  color: var(--asc);
+}
+
+.as.on {
+  background: var(--hlbg);
+  color: var(--hlfg);
+  border-radius: 2px;
+}
+
+#hexNote {
+  color: var(--dim);
+  text-transform: none;
+  letter-spacing: 0;
+}

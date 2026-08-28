@@ -1,0 +1,89 @@
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 10px;
+  box-shadow: var(--shadow);
+}
+
+.panel h3 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--dim);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.panel h3::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--accent);
+  flex: none;
+}
+
+.xtable {
+  border-collapse: collapse;
+  font-size: 12.5px;
+  width: 100%;
+}
+
+.xtable td {
+  padding: 2.5px 10px 2.5px 0;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+.xtable td:first-child {
+  color: var(--dim);
+  white-space: nowrap;
+  width: 140px;
+}
+
+.fp {
+  word-break: break-all;
+  color: var(--hxc);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 13px;
+  margin: 8px;
+  max-width: 720px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--fg);
+}
+
+.card table {
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.card td {
+  padding: 1px 10px 1px 0;
+  vertical-align: top;
+}
+
+.card td:first-child {
+  color: var(--dim);
+}
